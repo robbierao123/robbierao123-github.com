@@ -89,60 +89,54 @@ buttons.forEach(button =>{
             
             //
             //get product from products
-            let cartItem = {...Storage.getProduct(id),amount:1};
-            cart = [...cart,cartItem];
+            let TheCartItem = {...Storage.getProduct(id),amount:1};
+            cart = [...cart,TheCartItem];
 
-            // console.log(cart);
+             console.log(cart);
 
-            // add product to cart
-            //save cart in local storage
-            Storage.saveCart(cart);
-            //set cart values
-            this.setCartValues(cart);
-            //display cart item
-            this.addCartItem(cartItem);
-            //show the cart
-            // this.showCart();
+             Storage.saveCart(cart);
+             // add to DOM
+             this.setCartValues(cart);
+             this.addCartItem(TheCartItem );
+             this.showCart();
 
         })
     
 })
     }
-    setCartValues(cart){
+    setCartValues(cart) {
         let tempTotal = 0;
         let itemsTotal = 0;
-        cart.map(item=>{
-            tempTotal += item.price * item.amount;
-            itemsTotal += item.amount;
-        })
-        cartTotal.innerText = parseFloat(tempTotal.toFixed(2))
-        cartItems.innerText = itemsTotal;
-        console.log(tempTotal,itemsTotal);
+        cart.map(item => {
+          tempTotal += item.price * item.amount;
+          itemsTotal += item.amount;
+        });
+        cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+   
+         cartItems.innerText = itemsTotal;
+      }
 
-    }
     addCartItem(item){
         const div = document.createElement('div');
         div.classList.add('cart-item');
-        div.innerHTML =
-         `
-         <div class="cart-content">
-
-         <div class="cart-item">
-             <img src=${item.image} alt="">
-             <div>
-                 <h4>${item.title}</h4>
-                 <h5>${item.price}</h5>
-                 <span class="remove-item" data-id = ${item.id}>remove</span>
-             </div>
-             <div>
-                 <i class="fas fa-chevron-up" data-id = ${item.id}></i>
-                 <p class="item-amount">${item.amount}</p>
-                 <i class="fas fa-chevron-down" data-id = ${item.id}></i>
-             </div>
-         </div>
-        
-        
-        `;
+        div.innerHTML =`
+        <img src=${item.image} alt="product" />
+        <!-- item info -->
+        <div>
+          <h4>${item.title}</h4>
+          <h5>$${item.price}</h5>
+          <span class="remove-item" data-id=${item.id}>remove</span>
+        </div>
+        <!-- item functionality -->
+        <div>
+            <i class="fas fa-chevron-up" data-id=${item.id}></i>
+          <p class="item-amount">
+            ${item.amount}
+          </p>
+            <i class="fas fa-chevron-down" data-id=${item.id}></i>
+        </div>
+      <!-- cart item -->
+`;
         cartContent.appendChild(div);
          console.log(cartContent);
 
@@ -150,6 +144,8 @@ buttons.forEach(button =>{
      showCart(){
          cartOverlay.classList.add('transparentBcg');
          cartDOM.classList.add('showCart');
+
+     
      }
 }
 
