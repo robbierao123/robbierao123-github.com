@@ -65,7 +65,6 @@ class UI{
             <h4>${product.price}</h4>
         </article>
             `
-            
         });
       
         productsDOM.innerHTML = result;
@@ -99,9 +98,7 @@ buttons.forEach(button =>{
              this.setCartValues(cart);
              this.addCartItem(TheCartItem );
              this.showCart();
-
-        })
-    
+        })  
 })
     }
     setCartValues(cart) {
@@ -112,7 +109,6 @@ buttons.forEach(button =>{
           itemsTotal += item.amount;
         });
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
-   
          cartItems.innerText = itemsTotal;
       }
 
@@ -145,7 +141,6 @@ buttons.forEach(button =>{
          cartOverlay.classList.add('transparentBcg');
          cartDOM.classList.add('showCart');
 
-     
      }
 }
 
