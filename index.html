@@ -21,7 +21,7 @@
         <span class="nav-icon">
           <i class="fas fa-bars"></i>
         </span>
-        <img src="./images/logo.svg" alt="store logo" />
+        <img src="./images/logo2.PNG" alt="store logo" />
         <div class="cart-btn">
           <span class="nav-icon">
             <i class="fas fa-cart-plus"></i>
@@ -32,11 +32,23 @@
     </nav>
     <!-- end of navbar -->
     <!-- hero -->
-    <header class="hero">
-      <div class="banner">
-        <h1 class="banner-title">furniture collection</h1>
-        <button class="banner-btn">shop now</button>
-      </div>
+    <header>
+        <video autoplay muted loop id="myVideo">
+            <source src="backgroundvideo.mp4" type="video/mp4">
+    
+           
+          </video>
+
+          <div class="music-content">
+              <audio autoplay controls >
+                  <source src="backgroundmusic.mp3">
+            </audio>
+             
+            </div>
+
+
+
+  
     </header>
     <!-- end of hero -->
 
@@ -100,5 +112,10 @@
     
     <!--  javascript -->
     <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+        </script>
   </body>
 </html>

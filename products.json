@@ -3,64 +3,64 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "queen panel bed",
-        "price": 10.99,
+        "title": "Gaudagnini ",
+        "price": 1099000,
         "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
       }
     },
     {
       "sys": { "id": "2" },
       "fields": {
-        "title": "king panel bed",
-        "price": 12.99,
+        "title": " Kreutzer Stradivarius",
+        "price": 1299900,
         "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
       }
     },
     {
       "sys": { "id": "3" },
       "fields": {
-        "title": "single panel bed",
-        "price": 12.99,
+        "title": "Mendelssohn Stradivarius ",
+        "price": 2990000,
         "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
       }
     },
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "twin panel bed",
-        "price": 22.99,
+        "title": "Lady Tennant-Lafont Stradivarius",
+        "price": 2299000,
         "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
       }
     },
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "fridge",
-        "price": 88.99,
+        "title": "Guarnerius Del Gesu ",
+        "price": 8899000,
         "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
       }
     },
     {
       "sys": { "id": "6" },
       "fields": {
-        "title": "dresser",
-        "price": 32.99,
+        "title": "Baron von der Leyen Stradivarius",
+        "price": 3299000,
         "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
       }
     },
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "couch",
-        "price": 45.99,
+        "title": "ex-Lambert Stradivarius ",
+        "price": 4599000,
         "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
       }
     },
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "table",
-        "price": 33.99,
+        "title": "The Red Violin",
+        "price": 10000000,
         "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
       }
     }
